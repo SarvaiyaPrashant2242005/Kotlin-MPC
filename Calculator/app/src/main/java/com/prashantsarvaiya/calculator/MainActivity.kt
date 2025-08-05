@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             val num2 = editSecondNum.text.toString().toDoubleOrNull();
             if(num1 != null && num2 != null){
                 val result = num1 + num2
-                res.text = "Sum : $result";
+                res.text = "$num1 + $num2 = $result";
                 editFirstNum.text.clear()
                 editSecondNum.text.clear()
             }else {
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             val num2 = editSecondNum.text.toString().toDoubleOrNull();
             if(num1 != null && num2 != null){
                 val result = num1 - num2
-                res.text = "Sum : $result";
+                res.text = "$num1 - $num2 = $result";
                 editFirstNum.text.clear()
                 editSecondNum.text.clear()
             }else {
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             val num2 = editSecondNum.text.toString().toDoubleOrNull();
             if(num1 != null && num2 != null){
                 val result = num1 * num2
-                res.text = "Sum : $result";
+                res.text = "$num1 x $num2 = $result";
                 editFirstNum.text.clear()
                 editSecondNum.text.clear()
             }else {
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else{
                     val result = num1 / num2
-                    res.text = "Sum : $result";
+                    res.text = "$num1 / $num2 = $result";
                     editFirstNum.text.clear()
                     editSecondNum.text.clear()
                 }
